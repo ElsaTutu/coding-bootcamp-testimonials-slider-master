@@ -1,0 +1,133 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+/* general style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-size: 32px;
+font-family: 'Inter', sans-serif;
+width: 100%;
+height: 100vh;
+background-image: url('images/pattern-bg.svg'), url('images/pattern-curve.svg'), url('images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position: left top, center bottom, center;
+  background-size: 100%, 100%, 20%;
+  
+}
+
+a {
+    text-decoration: none;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  
+}
+
+/* images */
+.image_01 {
+  background-image: url('images/image-tanya.jpg');
+}
+
+.image_02 {
+  background-image: url('images/image-john.jpg');
+}
+
+.image_01,
+.image_02 {
+  height: 275px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0.5em;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.267);
+  border-radius: 8px;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  }
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  }
+
+/* text */
+.text{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 3em;
+  
+  
+}
+.text_p {
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.text_job {
+  color: grey;
+}
+
+.text_name{
+  font-weight: 700;
+}
+
+.text_job,
+.text_name {
+  font-size: 16px;
+}
+
+/* buttons  */
+.button {
+  background-color: white;
+  box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.75);
+  display: flex;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 50%;
+  right: 40%;
+  }
+
+.prev {
+  color: grey;
+}
+
+.next {
+  color: grey;
+}
+
+/* prev post animation */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* adaptation for screens  */
+@media screen and (min-width: 1440px) {
+  
+}
